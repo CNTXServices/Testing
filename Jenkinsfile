@@ -6,7 +6,7 @@ pipeline {
         echo "Hello from jenkinsfile"
             }
         }
-    stage('Hello') {
+    stage('Hello_01') {
       steps {
         echo "Hello for testing 1"
             }
