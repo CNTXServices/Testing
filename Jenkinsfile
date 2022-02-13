@@ -8,7 +8,7 @@ pipeline {
             if (env.BRANCH_NAME == 'develop') {
             //  echo "Hello from jenkinsfile_dev" 
                     sh '''
-                        echo "Stage1 and Step1 in development"
+                        echo "Stage1 and Step1 in development testing"
                     '''
                     }
         
