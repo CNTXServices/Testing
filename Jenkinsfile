@@ -33,7 +33,7 @@ pipeline {
     }
     stage('deploy code') {
       steps {
-        println "deploy code to taget servers"
+        println "deploy code to target servers"
         script {
             if (env.BRANCH_NAME == 'develop') {
                 sh '''
