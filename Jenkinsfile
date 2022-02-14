@@ -4,10 +4,12 @@ pipeline {
   stages {
     stage('build code') {
       steps {
-        script {
+	dir('edge') {
+          script {
             if (env.BRANCH_NAME == 'develop') {
             //  echo "Hello from jenkinsfile_dev" 
                     sh '''
+			pwd
                         echo "Stage1 and Step1 in development"
                     '''
                     }
@@ -15,12 +17,14 @@ pipeline {
             else if (env.BRANCH_NAME == 'uat') {
             // echo "Hello from jenkinsfile_uat" 
                     sh '''
+			pwd
                         echo "Stage1 and Step1 in uat"
                     '''
                     }
             else if (env.BRANCH_NAME == 'master') {
             // echo "Hello from jenkinsfile_master" 
                     sh '''
+			pwd
                         echo "Stage1 and Step1 in master"
                     '''
                     }
@@ -31,6 +35,7 @@ pipeline {
             }
         }
     }
+}
     stage('deploy code') {
       steps {
         println "deploy code to target servers"
