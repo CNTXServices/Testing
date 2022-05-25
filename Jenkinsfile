@@ -11,7 +11,7 @@ pipeline {
             //  echo "Hello from jenkinsfile_dev" 
                     sh '''
 			pwd
-                        echo "Stage1 and Step1 in development"
+                        echo "Stage1 and Step1 in development branch"
                     '''
                     }
         
