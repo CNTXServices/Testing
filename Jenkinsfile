@@ -18,7 +18,7 @@ pipeline {
             // echo "Hello from jenkinsfile_uat" 
                     sh '''
 			pwd
-                        echo "Stage1 and Step1 in uat"
+                        echo "Stage1 and Step1 in uat branch"
                     '''
                     }
             else if (env.BRANCH_NAME == 'master') {
