@@ -7,10 +7,11 @@ pipeline {
 	dir('edge') {
           script {
             if (env.BRANCH_NAME == 'develop') {
+		println "My Branch name ${BRANCH_NAME}"
             //  echo "Hello from jenkinsfile_dev" 
                     sh '''
 			pwd
-                        echo "Stage1 and Step1 in development"
+                        echo "Stage1 and Step1 in development branch"
                     '''
                     }
         
