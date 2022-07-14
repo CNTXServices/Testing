@@ -12,6 +12,8 @@ pipeline {
                     sh '''
 			pwd
                         echo "Stage1 and Step1 in development branch"
+                        echo "Stage1 and Step1 in development branch"
+                        echo "Stage1 and Step1 in development branch"
                     '''
                     }
         
